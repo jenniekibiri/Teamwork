@@ -18,12 +18,11 @@
   },
   "jest": {
     "collectCoverageFrom": [
-        "**/*.js",
-        "!data/keyMap.js",
-        "!/node_modules/"
+      "**/*.js",
+      "!data/keyMap.js",
+      "!/node_modules/"
     ]
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jenniekibiri/Teamwork.git"
