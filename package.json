@@ -4,7 +4,7 @@
   "description": "Teamwork is a project that create internal network among employees of an organization and facilitates teamwork and create bonding",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node spec"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/jenniekibiri/Teamwork/issues"
   },
-  "homepage": "https://github.com/jenniekibiri/Teamwork#readme"
+  "homepage": "https://github.com/jenniekibiri/Teamwork#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jasmine-node": "^3.0.0",
+    "request": "^2.88.0"
+  }
 }
