@@ -1,1 +1,3 @@
-Teamwork is a project that create internal network among employees of an organization and facilitates teamwork and create bonding [![Build Status](https://travis-ci.org/jenniekibiri/Teamwork.svg?branch=develop)](https://travis-ci.org/jenniekibiri/Teamwork)
+Teamwork is a project that create internal network among employees of an organization and facilitates teamwork and create bonding             
+[![Build Status](https://travis-ci.org/jenniekibiri/Teamwork.svg?branch=develop)](https://travis-ci.org/jenniekibiri/Teamwork)
+[![Coverage Status](https://coveralls.io/repos/github/jenniekibiri/Teamwork/badge.svg?branch=develop)](https://coveralls.io/github/jenniekibiri/Teamwork?branch=develop)
