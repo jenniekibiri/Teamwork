@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jenniekibiri/Teamwork#readme",
   "dependencies": {
+    "cloudinary": "^1.17.0",
     "express": "^4.17.1",
     "jasmine-node": "^3.0.0",
     "request": "^2.88.0"
