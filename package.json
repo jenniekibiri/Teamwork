@@ -20,10 +20,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "jasmine-node": "^3.0.0",
-    "jest": "^24.9.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.7"
+    "coveralls": "^3.0.7",
+    "jest": "^24.9.0"
   }
 }
