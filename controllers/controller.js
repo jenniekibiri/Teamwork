@@ -42,5 +42,13 @@ exports.getFeed = (req , res) => {
     
     
 }
+exports.getArticleById = (req , res) => {
+    //Controllers to query db for one article as params.article_id
+    client.query(`SELECT * FROM articles WHERE article_id =${req.params.article_id} `, (err, result) => {
+        res.send(result.rows)
+    })
+}
+
+
 
 module.exports = exports; 

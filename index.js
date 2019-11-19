@@ -8,6 +8,10 @@ app.use(fileUpload({useTempFiles:true}))
 
 
 app.get('/feed', Auth.verifyToken, controller.getFeed);
+
+app.get('/article/:article_id', Auth.verifyToken, controller.getArticleById)
+
 app.listen(process.env.PORT || 5000,() => {
   console.log("listening on port  " )
 });
+
