@@ -15,7 +15,10 @@ app.post('/auth/create-user/v1', Auth.verifyToken, controller.createNewUser);
 
 app.post('/auth/sign-in/v1', controller.Authenticate)
 
+
 app.post('/gifs', Auth.verifyToken, controller.createNewGif)
+
+//app.post('/article', Auth.verifyToken, controller.createArticle)
 
 app.listen(process.env.PORT || 5000,() => {
   console.log("listening on port  " )
