@@ -1,4 +1,4 @@
-
+var request =require('request');
 const { Client } = require('pg');
 
 var connectionString = "postgres://postgres:5463jeny@localhost:5432/teamwork";
@@ -8,7 +8,7 @@ const client = new Client({
 });
 
 
-client.connect(err => console.log(err));
+
 
 exports.getFeed = (req , res) => {
     //Controllers to query all data from db and send for home feed displays
