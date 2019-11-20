@@ -1,6 +1,6 @@
 var express = require('express');
 const controller = require('./controllers/controller.js')
-const Auth = require('./Controllers/auth')
+const Auth = require('./controllers/auth.js')
 var app = express();
 var exports = module.exports = {};
 
