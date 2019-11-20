@@ -41,11 +41,6 @@ exports.getFeed = (req , res) => {
     
     
 }
-
-
-
-
-
 exports.createNewUser = (req , res) => {
     const token = req.headers['x-access-token']
      const decoded =  jwt.verify(token, 'secret')
@@ -61,8 +56,6 @@ exports.createNewUser = (req , res) => {
             })
         })
     })
-
-    
     
     //Controllers for admin to create new employee
     
