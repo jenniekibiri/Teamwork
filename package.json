@@ -6,7 +6,7 @@
   "scripts": {
     "test-init": "node node_modules/jasmine/bin/jasmine.js init",
     "test": "node node_modules/jasmine/bin/jasmine.js",
-    "coveralls": "jest --detectOpenHandles --coverage --coverageReporters=text-lcov | coveralls"
+    "coveralls": "jest  --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
