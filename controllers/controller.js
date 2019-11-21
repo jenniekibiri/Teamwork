@@ -18,7 +18,7 @@ var connectionString = "postgres://postgres:5463jeny@localhost:5432/teamwork";
 const client = new Client({
     connectionString: connectionString
 });
-
+client.connect(err => console.log(err));
 //Methode to validate email
 function isValidEmail(email){
     return /\S+@\S+\.\S+/.test(email);
@@ -29,7 +29,7 @@ function generateToken(id){
     return token;
 }
 
-client.connect(err => console.log(err));
+
 
 exports.getFeed = (req , res) => {
     //Controllers to query all data from db and send for home feed displays
