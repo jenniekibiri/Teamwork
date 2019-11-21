@@ -47,7 +47,7 @@ describe(" get feed Server", function() {
 // })
 
  },5000);
-describe('get  /article/:article_id', ()=>{
+describe('get  /article/4', ()=>{
   var data ={
     url:'http://localhost:3000/article/:article_id',
     headers:{

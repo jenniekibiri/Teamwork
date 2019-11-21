@@ -35,7 +35,7 @@ exports.getFeed = (req , res) => {
     //Controllers to query all data from db and send for home feed displays
     
     client.query('SELECT * FROM articles, gifs', (err, result) => {
-         res.status(200).send(result.rows)
+         res.status(200).send(result)
          //console.log(typeof result.rows)
     })
     
