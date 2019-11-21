@@ -2,11 +2,12 @@
   "name": "teamwork",
   "version": "1.0.0",
   "description": "Teamwork is a project that create internal network among employees of an organization and facilitates teamwork and create bonding",
-  "main": "index.js",
+  "main": "node index.js",
   "scripts": {
     "test-init": "node node_modules/jasmine/bin/jasmine.js init",
     "test": "node node_modules/jasmine/bin/jasmine.js",
-    "coveralls": "jest  --coverage --coverageReporters=text-lcov --forceExit | coveralls"
+    "coveralls": "jest  --coverage --coverageReporters=text-lcov --forceExit | coveralls",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
