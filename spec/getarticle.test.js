@@ -14,7 +14,7 @@ describe(" get feed Server", function() {
 
     it("returns get feed", function(done) {
       request.get(base_url, function(error, response, body) {
-        expect(body).toBe("get feed");
+        expect(body).toBe('get feed');
         done();
         
       });
@@ -47,6 +47,7 @@ describe(" get feed Server", function() {
 // })
 
  },5000);
+ 
 describe('get  /article/4', ()=>{
   var data ={
     url:'http://localhost:3000/article/:article_id',
@@ -54,7 +55,7 @@ describe('get  /article/4', ()=>{
       'x-access-token':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU1LCJpYXQiOjE1NzM5ODg5NDIsImV4cCI6MTU3NjU4MDk0Mn0.wQrKgnxKgx8Y_LwrSJcpRJUgKKiRRv5rRkm3t59wtxw'
     }
   }
-  it('returns an article for specified id',()=>{
+  it('returns an article for specified id',(done)=>{
     request.get(data,(error,response,body)=>{
       expect(()=>{
         JSON.parse(body)

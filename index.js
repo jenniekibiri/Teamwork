@@ -5,7 +5,7 @@ var app = express();
 var exports = module.exports = {};
 
 app.get('/', function(req, res){
-  res.send('get feed');
+  res.status(200).send('get feed');
 });
 
 app.get('/feed', Auth.verifyToken, controller.getFeed);

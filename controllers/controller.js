@@ -35,18 +35,18 @@ exports.getFeed = (req , res) => {
     //Controllers to query all data from db and send for home feed displays
     
     client.query('SELECT * FROM articles, gifs', (err, result) => {
-         res.status(200).send(result)
+         res.status(200).send(result.rows);
          //console.log(typeof result.rows)
-    })
+    });
     
-    
+
 }
 
 
 exports.getArticleById = (req , res) => {
     //Controllers to query db for one article as params.article_id
     client.query(`SELECT * FROM articles WHERE article_id =${req.params.article_id} `, (err, result) => {
-        res.status(200).send(result.rows)
+        res.status(200).send(result)
     })
 }
 
