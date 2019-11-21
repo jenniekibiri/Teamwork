@@ -11,8 +11,8 @@ app.get('/', function(req, res){
 app.get('/feed', Auth.verifyToken, controller.getFeed);
 
 
-var server = app.listen(3000, function(){
-  console.log('Magic is happening on port  3000 watch out');
+var server = app.listen( process.env || 3000, function(){
+  console.log('Server is running at port 3000 ...');
 });
 
 exports.closeServer = function(){
