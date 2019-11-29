@@ -7,7 +7,8 @@
     "test-init": "node node_modules/jasmine/bin/jasmine.js init",
     "test": "node node_modules/jasmine/bin/jasmine.js",
     "coveralls": "jest  --coverage --coverageReporters=text-lcov --forceExit | coveralls",
-  "start": "node index.js"
+    "start": "node index.js",
+    "dev": "env-cmd ./config/dev.env node index.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.7",
+    "env": "0.0.2",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
     "jasmine": "^3.5.0",
