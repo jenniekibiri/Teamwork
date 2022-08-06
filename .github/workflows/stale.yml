@@ -13,8 +13,7 @@ jobs:
         with:
           issue-types: 'issues'
           stale-issue-message: 'This issue is stale because it has been open 1 day with no activity. Remove stale label or comment or this will be closed in 2 days'
-          days-before-stale: 1
-          days-before-close: 2
+          days-before-issue-stale: 2
           days-before-issue-close: 2
           stale-issue-label: stale
           exempt-issue-labels: 'blocked,must,should,keep'
