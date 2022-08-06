@@ -19,7 +19,7 @@ jobs:
     - name: Print os name
       run: grep -i "^ID=" /etc/os-release 
     - name: Print Repo Name
-      run: github.workspace
+      run: echo ${{ github.workspace.repo.name }}
 
 
    
