@@ -14,19 +14,12 @@ jobs:
   os:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    # print os name
     - name: Print outputs
       run: echo ${{ join(steps.checkout.outputs.*, ',') }}
     - name: Print os name
-      run:  echo ${{ steps.checkout.outputs.os }}
+      run: grep -i "^ID=" /etc/os-release | cut -d= -f2
     - name: Print Repo Name
-      run: echo ${{ steps.checkout.outputs.repo }}
-    - name: Print Repo Owner
-      run: echo ${{ steps.checkout.outputs.owner }}
-    - name: Print Repo files
-      run: echo ${{ steps.checkout.outputs.files }}
-    - name: Print Repo Branches
-      run: echo ${{ steps.checkout.outputs.branches }}  
+      run: echo ${{ github.repository.name }}
+
 
    
