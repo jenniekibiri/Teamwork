@@ -14,13 +14,6 @@ jobs:
   os:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/os@main
-        id: os
-        with:
-          os-name: "ubuntu"
-          os-version: "18.04"
-          os-arch: "x86_64"
-          os-files: '{{ glob("**/*") }}'
       - name: Print os name
         run: echo "{{ .GitHub.workflow.os.os-name }}"
       - name: Print Repo Name
