@@ -19,14 +19,14 @@ jobs:
     - name: Print outputs
       run: echo ${{ join(steps.checkout.outputs.*, ',') }}
     - name: Print os name
-      run: echo "{{ .GitHub.workflow.os.os-name }}"
+      run:  echo ${{ steps.checkout.outputs.os }}
     - name: Print Repo Name
-      run: echo "{{ .GitHub.repository.name }}"
+      run: echo ${{ steps.checkout.outputs.repo }}
     - name: Print Repo Owner
-      run: echo "{{ .GitHub.repository.owner }}"
+      run: echo ${{ steps.checkout.outputs.owner }}
     - name: Print Repo files
-      run: echo "{{ .GitHub.repository.files }}"
+      run: echo ${{ steps.checkout.outputs.files }}
     - name: Print Repo Branches
-      run: echo "{{ .GitHub.repository.branches }}"   
+      run: echo ${{ steps.checkout.outputs.branches }}  
 
    
