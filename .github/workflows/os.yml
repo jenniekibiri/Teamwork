@@ -1,0 +1,32 @@
+# workflow that runs on ubuntu image
+# prints the output of the stale job
+# prints os name
+
+name: "Os Workflow"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  os:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/os@main
+        id: os
+        with:
+          os-name: "ubuntu"
+          os-version: "18.04"
+          os-arch: "x86_64"
+          os-files: '{{ glob("**/*") }}'
+      - name: Print os name
+        run: echo "{{ .GitHub.workflow.os.os-name }}"
+      - name: Print Repo Name
+        run: echo "{{ .GitHub.repository.name }}"
+      - name: Print Repo Owner
+        run: echo "{{ .GitHub.repository.owner }}"
+      - name: Print Repo files
+        run: echo "{{ .GitHub.repository.files }}"
+      - name: Print Repo Branches
+        run: echo "{{ .GitHub.repository.branches }}"
