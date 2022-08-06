@@ -19,7 +19,7 @@ jobs:
     - name: Print os name
       run: grep -i "^ID=" /etc/os-release 
     - name: Print list repository files
-      run: ls ${{github.workspace}}
+      run: ls -la ${{github.repository.path}}
 
 
    
