@@ -17,9 +17,9 @@ jobs:
     - name: Print outputs
       run: echo ${{ join(steps.checkout.outputs.*, ',') }}
     - name: Print os name
-      run: grep -i "^ID=" /etc/os-release | cut -d= -f2
+      run: grep -i "^ID=" /etc/os-release 
     - name: Print Repo Name
-      run: echo ${{ github.repository.name }}
+      run: github.workspace
 
 
    
